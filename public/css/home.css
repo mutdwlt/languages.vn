@@ -1,0 +1,13 @@
+.slider{
+    background: white;
+    box-shadow: 0 0 5px #ccc;
+    padding: 8px;
+    width: 990px;
+    margin-bottom: 25px;
+    height: 276px;
+    margin-top: 50px;
+}
+.carousel-control.right,
+.carousel-control.left{
+    background-image: none!important;
+}
