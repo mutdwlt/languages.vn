@@ -21,7 +21,7 @@
                         <div class="fl">
                             <ul>
                                 <li>
-                                    <a href="/lien-he">
+                                    <a href="/contact">
                                         {{trans('nav.contact')}}
                                     </a>
                                 </li>

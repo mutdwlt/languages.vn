@@ -15,15 +15,19 @@
 Route::group(
         [
     'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect']
+    'middleware' => ['localize'], // Route translate middleware
+    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect'],
         ], function() {
     /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP * */
     Route::get('/', function () {
         return view('home');
     });
-    Route::get('/lien-he', function () {
-        return view('contact');
+    Route::get(LaravelLocalization::transRoute('routes.contact'), function() {
+        return View::make('contact');
     });
+//    Route::get(LaravelLocalization::transRoute('routes.view'), function($id) {
+//        return View::make('view', ['id' => $id]);
+//    });
 });
 
 /** OTHER PAGES THAT SHOULD NOT BE LOCALIZED * */

@@ -53,6 +53,8 @@ class Kernel extends HttpKernel {
         'localizationRedirect' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
         'localeSessionRedirect' => \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class,
             // REDIRECTION MIDDLEWARE
+        'localize' => 'Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes',
+            // TRANSLATE ROUTES MIDDLEWARE
     ];
 
 }
