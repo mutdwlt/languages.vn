@@ -1,5 +1,5 @@
 @extends('templates.master')
-@section('title', 'Home')
+@section('title', 'Contact')
 @section('css')
 
 @stop
@@ -15,3 +15,4 @@
     </div>
 </div>
 @stop
+
