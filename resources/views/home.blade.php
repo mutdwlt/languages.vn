@@ -1,7 +1,7 @@
 @extends('templates.master')
 @section('title', 'Home')
 @section('css')
-<link rel="stylesheet" type="text/css" href="css/home.css">
+<link rel="stylesheet" type="text/css" href="/css/home.css">
 @stop
 @section('content')
 <div class="container">
@@ -11,12 +11,17 @@
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <a>
-                        <img src="image/banner1.jpg" alt="Chania">
+                        <img src="/image/banner3.png" alt="Languages.vn">
                     </a>
                 </div>
                 <div class="item">
                     <a>
-                        <img src="image/banner2.jpg" alt="Chania">
+                        <img src="/image/banner1.jpg" alt="Languages.vn">
+                    </a>
+                </div>
+                <div class="item">
+                    <a>
+                        <img src="/image/banner2.jpg" alt="Languages.vn">
                     </a>
                 </div>
             </div>

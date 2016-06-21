@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Facilitating Global Citizenship!">
         <meta name="author" content="Ngô Văn Thịnh - mutdwlt">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
         @yield('css')
-        <link rel="shortcut icon" type="image/png" href="image/favicon-32x32.png"/>
+        <link rel="shortcut icon" type="image/png" href="/image/favicon-32x32.png"/>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -21,7 +21,7 @@
                         <div class="fl">
                             <ul>
                                 <li>
-                                    <a href="/contact">
+                                    <a href="{{ LaravelLocalization::getLocalizedURL(null,'/contact') }}">
                                         {{trans('nav.contact')}}
                                     </a>
                                 </li>
@@ -39,18 +39,24 @@
                         </div>
                         <div class="fr">
                             <a class="facebook_icon fl" href="https://www.facebook.com/languages.vn1" target="blank" data-toggle="tooltip" title="{{trans('nav.facebook')}}">
-                                <img src="image/fb-art.jpg">
+                                <img src="/image/fb-art.jpg">
                             </a>
-                            <a class="lang-switcher fl" data-toggle="tooltip" title="{{trans('nav.switch-lang')}}">
-                                <img src="image/eng.png">
+                            @if(LaravelLocalization::getCurrentLocale() == 'vi' )
+                            <a class="lang-switcher fl" rel="alternate" hreflang="en" href="{{LaravelLocalization::getLocalizedURL('en') }}" data-toggle="tooltip" title="{{trans('nav.switch-lang')}}">
+                                <img src="/image/eng.png">
                             </a>
+                            @else
+                            <a class="lang-switcher fl" rel="alternate" hreflang="en" href="{{LaravelLocalization::getLocalizedURL('vi') }}" data-toggle="tooltip" title="{{trans('nav.switch-lang')}}">
+                                <img src="/image/vie.png">
+                            </a>
+                            @endif
                         </div>
                     </div>
                 </div>
                 <div id="logo-header">
                     <div class="container">
-                        <a class="logo" href="/">
-                            <img src="image/languages.vn.png">
+                        <a class="logo" href="{{ LaravelLocalization::getLocalizedURL(null,'/') }}">
+                            <img src="/image/languages.vn.png">
                         </a>
                         <h2 class="slogan">Facilitating Global Citizenship</h2>
                     </div>
@@ -227,30 +233,30 @@
             </div>
         </div>
         <script>
-            $('#gioi-thieu-chung').hover(function () {
-                $('#gioi-thieu-chung ul.sub-menu').toggle();
-            });
-            $('#gioi-thieu-chung ul.sub-menu').hover(function () {
-                $('li#gioi-thieu-chung').css("background-color", "#1b1b1b");
-                $('li#gioi-thieu-chung .parent-li').css("color", "white");
-            }, function () {
-                $('li#gioi-thieu-chung').css("background-color", "transparent");
-                $('li#gioi-thieu-chung .parent-li').css("color", "#1b1b1b");
-            });
-            $('#khoa-hoc ul.sub-menu').hover(function () {
-                $('li#khoa-hoc').css("background-color", "#1b1b1b");
-                $('li#khoa-hoc .parent-li').css("color", "white");
-            }, function () {
-                $('li#khoa-hoc').css("background-color", "transparent");
-                $('li#khoa-hoc .parent-li').css("color", "#1b1b1b");
-            });
-            $('#khoa-hoc').hover(function () {
-                $('#khoa-hoc ul.sub-menu').toggle();
-            });
+$('#gioi-thieu-chung').hover(function () {
+    $('#gioi-thieu-chung ul.sub-menu').toggle();
+});
+$('#gioi-thieu-chung ul.sub-menu').hover(function () {
+    $('li#gioi-thieu-chung').css("background-color", "#1b1b1b");
+    $('li#gioi-thieu-chung .parent-li').css("color", "white");
+}, function () {
+    $('li#gioi-thieu-chung').css("background-color", "transparent");
+    $('li#gioi-thieu-chung .parent-li').css("color", "#1b1b1b");
+});
+$('#khoa-hoc ul.sub-menu').hover(function () {
+    $('li#khoa-hoc').css("background-color", "#1b1b1b");
+    $('li#khoa-hoc .parent-li').css("color", "white");
+}, function () {
+    $('li#khoa-hoc').css("background-color", "transparent");
+    $('li#khoa-hoc .parent-li').css("color", "#1b1b1b");
+});
+$('#khoa-hoc').hover(function () {
+    $('#khoa-hoc ul.sub-menu').toggle();
+});
 
-            $(function () {
-                $('#carousel-example-generic').carousel();
-            });
+$(function () {
+    $('#carousel-example-generic').carousel();
+});
         </script>
     </body>
 </html>

@@ -65,9 +65,9 @@ ul{
 .slogan{
     color: #636363;
     margin-left: 86px;
-    margin-top: 53px;
+    margin-top: 75px;
     float: left;
-    font-size: 18px;
+    font-size: 25px;
 }
 #mainNav{
     border-top: 1px solid #d5d5d5;
@@ -166,6 +166,8 @@ ul.sub-menu li a{
     display: block!important;
     padding: 0!important;
     margin: 8px 13px;
+    overflow: hidden;
+    border-radius: 3px;
 }
 .lang-switcher{
     display: block!important;

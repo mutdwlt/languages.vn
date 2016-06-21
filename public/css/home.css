@@ -11,3 +11,9 @@
 .carousel-control.left{
     background-image: none!important;
 }
+.carousel-inner{
+    height: 100%;
+}
+.carousel-inner img{
+    margin: 0 auto;
+}
