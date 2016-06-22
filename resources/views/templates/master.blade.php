@@ -26,12 +26,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a>
+                                    <a href="{{ LaravelLocalization::getLocalizedURL(null,'/recruit') }}">
                                         {{trans('nav.recruitment')}}
                                     </a>
                                 </li>
                                 <li>
-                                    <a>
+                                    <a href="{{ LaravelLocalization::getLocalizedURL(null,'/common-question') }}">
                                         {{trans('nav.common-question')}}
                                     </a>
                                 </li>

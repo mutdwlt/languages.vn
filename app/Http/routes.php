@@ -22,9 +22,9 @@ Route::group(
     Route::get('/', function () {
         return view('home');
     });
-    Route::get(LaravelLocalization::transRoute('routes.contact'), function() {
-        return View::make('contact');
-    });
+    Route::get(LaravelLocalization::transRoute('routes.contact'),'HomeController@Contact');
+    Route::get(LaravelLocalization::transRoute('routes.recruit'),'HomeController@Recruit');
+    Route::get(LaravelLocalization::transRoute('routes.common-question'),'HomeController@CommonQuestion');
 //    Route::get(LaravelLocalization::transRoute('routes.view'), function($id) {
 //        return View::make('view', ['id' => $id]);
 //    });
