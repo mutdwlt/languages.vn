@@ -42,9 +42,10 @@
             
         </div>
         <div class="sidebar fl">
-            
+            @include('include.facebook_small')
         </div>
     </div>
 </div>
 @stop
+
 

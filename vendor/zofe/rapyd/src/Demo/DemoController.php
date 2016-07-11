@@ -24,7 +24,7 @@ class DemoController extends Controller
         \Schema::dropIfExists("demo_articles");
         \Schema::dropIfExists("demo_article_detail");
         \Schema::dropIfExists("demo_comments");
-        \Schema::dropIfExists("demo_categories");
+        \Schema::dropIfExists("category");
         \Schema::dropIfExists("demo_article_category");
 
         //create all tables

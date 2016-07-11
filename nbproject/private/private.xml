@@ -4,14 +4,16 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/var/www/html/languages.vn/app/Http/routes.php</file>
-            <file>file:/var/www/html/languages.vn/config/app.php</file>
-            <file>file:/var/www/html/languages.vn/resources/views/contact.blade.php</file>
+            <file>file:/var/www/html/languages.vn/app/Http/Controllers/AdminController.php</file>
             <file>file:/var/www/html/languages.vn/public/css/style.css</file>
+            <file>file:/var/www/html/languages.vn/resources/views/contact.blade.php</file>
+            <file>file:/var/www/html/languages.vn/resources/views/single_page.blade.php</file>
             <file>file:/var/www/html/languages.vn/public/css/home.css</file>
-            <file>file:/var/www/html/languages.vn/app/Http/Kernel.php</file>
+            <file>file:/var/www/html/languages.vn/resources/views/common_question.blade.php</file>
             <file>file:/var/www/html/languages.vn/resources/views/home.blade.php</file>
             <file>file:/var/www/html/languages.vn/resources/views/templates/master.blade.php</file>
-            <file>file:/var/www/html/languages.vn/config/laravellocalization.php</file>
+            <file>file:/var/www/html/languages.vn/resources/views/recruit.blade.php</file>
+            <file>file:/var/www/html/languages.vn/resources/views/test.blade.php</file>
         </group>
     </open-files>
 </project-private>

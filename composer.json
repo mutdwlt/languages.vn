@@ -16,7 +16,8 @@
         "symfony/dom-crawler": "2.8.*|3.0.*",
         "mcamara/laravel-localization": "1.1.*",
         "zofe/rapyd": "2.2.*",
-        "doctrine/dbal": "^2.5"
+        "doctrine/dbal": "^2.5",
+        "guzzlehttp/guzzle": "~5.3|~6.0"
     },
     "autoload": {
         "classmap": [

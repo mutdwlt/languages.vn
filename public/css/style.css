@@ -180,3 +180,19 @@ ul.sub-menu li a{
     width: 23px;
     height: 23px;
 }
+.contents.fl{
+    min-height: 500px;
+}
+.contents.fl img{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto!important;
+}
+.contents.fl p{
+    margin: 15px 0;
+    line-height: 20px;
+}
+.contents.fl iframe{
+    width: 100%;
+}

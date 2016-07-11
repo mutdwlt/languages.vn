@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+        <script type="text/javascript" src="/js/plugin/ckeditor/ckeditor.js"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -70,29 +70,34 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL(null,'about-us/who-we-are') }}">
                                             Chúng tôi là ai
                                         </a>
                                     </li>
                                     <li>
-                                        <a>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL(null,'about-us/learning-enviroment') }}">
+                                            {{trans('nav.learning_enviroment')}}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL(null,'about-us/our-motivation') }}">
                                             Động lực thúc đẩy hoạt động
                                         </a>
                                     </li>
                                     <li>
-                                        <a>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL(null,'about-us/teacher-info') }}">
                                             Đội ngũ giáo viên
                                         </a>
                                     </li>
                                     <li>
-                                        <a>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL(null,'about-us/our-center') }}">
                                             Hệ thống Languages.vn
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li id="tin-tuc">
-                                <a>
+                                <a href="{{ LaravelLocalization::getLocalizedURL(null,'news-and-events') }}">
                                     {{trans('nav.new-event')}}
                                 </a>
                             </li>
@@ -102,28 +107,33 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL(null,'courses/english-for-kinder') }}">
                                             Tiếng Anh Mẫu Giáo
                                         </a>
                                     </li>
                                     <li>
-                                        <a>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL(null,'courses/english-for-child') }}">
                                             Tiếng Anh Thiếu Nhi
                                         </a>
                                     </li>
                                     <li>
-                                        <a>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL(null,'courses/english-for-teens') }}">
                                             Tiếng Anh Thiếu Niên
                                         </a>
                                     </li>
                                     <li>
-                                        <a>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL(null,'courses/communication-english') }}">
                                             Tiếng Anh Giao Tiếp
                                         </a>
                                     </li>
                                     <li>
-                                        <a>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL(null,'courses/chuyen-de') }}">
                                             Các khóa học chuyên đề
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ LaravelLocalization::getLocalizedURL(null,'courses/online-registration') }}">
+                                            Đăng ký trực tuyến
                                         </a>
                                     </li>
                                 </ul>
@@ -132,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            <div id="content">
+            <div id="wrapper_content">
                 @yield('content')
             </div>
             <div id="footer">
